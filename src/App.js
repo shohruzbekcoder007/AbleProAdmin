@@ -6,7 +6,7 @@ import defaultTheme from "./theme/defaultTheme"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import MainLayout from "./layout/MainLayout"
 import ThemeCustomization from './themes'
-import DashboardDefault from './pages/dashboard'
+import { DashboardDefault, TableExample } from "./pages"
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="login" element={<p>login</p>} />
           <Route path="/" element={<MainLayout />} >
             <Route index element={<DashboardDefault />} />
+            <Route path="table" element={<TableExample />} />
           </Route>
           <Route path="*" element={<p>nage not found</p>} />
         </Routes>

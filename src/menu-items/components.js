@@ -40,6 +40,14 @@ const components = {
       url: '/components-overview/shadows',
       icon: icons.shadow,
       breadcrumbs: false
+    },
+    {
+      id: 'table',
+      title: 'Table example',
+      type: 'item',
+      url: '/table',
+      icon: icons.shadow,
+      breadcrumbs: false
     }
   ]
 };
